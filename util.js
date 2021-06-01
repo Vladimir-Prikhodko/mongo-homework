@@ -1,4 +1,4 @@
-const faker = require('faker');
+const faker = require('faker')
 
 const generateUser = ({
   firstName = faker.name.firstName(),
@@ -10,9 +10,9 @@ const generateUser = ({
   lastName,
   department,
   createdAt
-});
+})
 
 module.exports = {
   mapUser: generateUser,
   getRandomFirstName: () => faker.name.firstName()
-};
+}
